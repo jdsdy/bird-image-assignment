@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bird coding assignment</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="content">
+
+      <h1 class="title">Bird Website</h1>
+
+      <div class="bird-info-container">
+        <img class="bird-image js-bird-image" src="http://www.outgrabe.net/bird00.jpg" alt="bird image">
+        <p class="bird-description js-bird-description">Pardalote by fir0002 (CC-by-NC)</p>
+      </div>
+ 
+      <div class="button-container">
+        <button class="bird-button" onclick="changeBirdDetails(0)">Pardalote</button>
+        <button class="bird-button" onclick="changeBirdDetails(1)">Purple Swamp Hen</button>
+        <button class="bird-button" onclick="changeBirdDetails(2)">White-headed Stilt</button>
+        <button class="bird-button" onclick="changeBirdDetails(3)">Inland Thornbill</button>
+        <button class="bird-button" onclick="changeBirdDetails(4)">Rose Robin</button>
+      </div>
+
+      <div class="theme-button-container">
+        <button class="theme-button" onclick="changeTheme()">Change Theme</button>
+      </div>
+      
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+:root {
+  --primary-color: rgb(111, 118, 180);
+  --secondary-color: rgb(134, 169, 180);
+  --bg-color: lightblue;
+  --font-color: rgb(225, 230, 173);
+  --heading-color: rgb(240, 122, 204);
+}
+
+html[data-theme="dark"] {
+  --primary-color: rgb(85, 65, 26);
+  --secondary-color: rgb(61, 78, 61);
+  --bg-color: rgb(10, 49, 10);
+  --font-color: rgb(175, 152, 255);
+  --heading-color: rgb(228, 46, 46);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 50px;
+  width: 100%;
+  font-family: "Caveat", cursive;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+.bird-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.bird-image {
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+.bird-description {
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.button-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bird-button {
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px black;
+}
+
+.theme-button-container {
+  display: flex;
+  justify-content: center;
+}
